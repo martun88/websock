@@ -1,9 +1,30 @@
-<script src ="/socket.io/socket.io.js/"></script>
-
-<script>
-	var socket = io()
-
-	socket.on('message', function(data) {
-		document.write(data)
-	})
-</script>	
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Antrian</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="main">
+		<div class="counter">
+			<span>No. Counter</span>
+			<span id="counterNum"></span>
+		</div>
+	</div>
+	<div class="login">
+		<div class="loginContainer">
+			<h1>Login Sebagai?</h1>
+			<div class="buttonContainer">
+				<button id="asCounter" class="btn btnLogin ripple" title="Login sebagai Counter">Counter</button>
+				<button id="asGuest" class="btn btnLogin ripple" title="Login sebagai Guest">Guest</button>
+			</div>
+		</div>
+	</div>
+	<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+	<script src ="/socket.io/socket.io.js/"></script>
+	<script src ="/main.js"></script>
+</body>
+</html>
