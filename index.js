@@ -3,7 +3,7 @@ var app = express()
 var path = require('path')
 var server = require('http').createServer(app)
 var io = require('socket.io')(server)
-var port = process.env.PORT || 3000;
+var port = process.env.PORT || 5000;
 
 app.use(express.static(__dirname + '/root'));
 
@@ -119,4 +119,4 @@ io.on('connection', function(socket){
 })
 
 console.log("Running server..");
-server.listen(8000)
+server.listen(port)
