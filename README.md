@@ -1,4 +1,8 @@
-## Install queue app with socket.io
+# Queue app with express & socket.io
+
+Access now from [Heroku](https://queue-app-websock.herokuapp.com/)
+
+## Install app
 
 1. Clone Git.
 2. Type `npm install` to install node modules.
