@@ -119,4 +119,4 @@ io.on('connection', function(socket){
 })
 
 console.log("Running server..");
-server.listen(port)
+server.listen(port);
